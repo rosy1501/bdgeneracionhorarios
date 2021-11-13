@@ -48,7 +48,7 @@
                 <a href="cambiar_status_docente.php?id=<?php echo $eCodDocente; ?>" class="show btn btn-primary" title="Cambiar status docente" data-toogle="tooltip"><i class="fa fa-eye" aria-hidden="true"></i></a>
                 
             </td>
-        </tr>
+        </tr>   
         <?php
         }
         ?>

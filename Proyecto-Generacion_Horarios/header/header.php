@@ -5,6 +5,8 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/style.css">
+  <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -33,6 +35,15 @@
               <a class="dropdown-item" href="#">Listado de Horarios</a>
             </div>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Grupos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Crear Grupos</a>
+              <a class="dropdown-item" href="#">Listado de Grupos</a>
+            </div>
+          </li>
 
 
            <li class="nav-item dropdown">
@@ -58,8 +69,8 @@
               Materias
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Agregar Materias</a>
-              <a class="dropdown-item" href="#">Listado de Materias</a>
+              <a class="dropdown-item" href="content/alta_materias.php">Agregar Materias</a>
+              <a class="dropdown-item" href="content/listado_materias.php">Listado de Materias</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -78,6 +89,33 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Agregar Modalidad</a>
               <a class="dropdown-item" href="#">Listado de Modalidades</a>
+            </div>
+          </li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Asignaciones
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Docente - Materia</a>
+              <a class="dropdown-item" href="#">Docente - Grupo</a>
+              <a class="dropdown-item" href="#">Materia - Grupo</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Ejercicios Extras
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="content/ejercicios_js/Ejercicio1.HTML">Manejo de JS uno</a>
+              <a class="dropdown-item" href="content/ejercicios_js/Ejercicio2.HTML">Manejo de JS dos</a>
+              <a class="dropdown-item" href="content/ejercicios_js/Ejercicio3.HTML">Manejo de JS tres</a>
+              <a class="dropdown-item" href="content/ejemplo_modal.php">Ejemplo Modal</a>
+              <a class="dropdown-item" href="content/select.php">Manejo de select</a>
+              <a class="dropdown-item" href="content/ejercicios_js/mostrar_ocultar.HTML">Mostrar ocultar</a>
+              <a class="dropdown-item" href="content/ejercicios_js/Ejercicio_tabla.HTML">Tabla</a>
+              <a class="dropdown-item" href="content/ejercicios_js/sincronizarselect.php">Sincronizar Select</a>
+              <a class="dropdown-item" href="content/ejercicios_js/seleccion_turnosgrupos.php">Seleccion de Turnos/Grupos</a>
             </div>
           </li>
         </ul>

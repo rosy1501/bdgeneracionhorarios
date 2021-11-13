@@ -1,0 +1,47 @@
+<div class="titulo_boton">
+    <button style="cursor: pointer;" onClick="muestra_oculta('contenido')" title="" class="boton_mostrar"> Mostrar / Ocultar</button>
+</div>
+
+<div id="contenido">
+    <p>Contenido a visualizar</p>
+</div>
+<br />
+<br />
+<select id="getFame" onchange="admSelectCheck(this);">
+    <option value="1">Prueba</option>
+    <option value="2">Prueba 2</option>
+    <option value="0" id="admOption">Admin</option>
+
+</select>
+<div id="admDivCheck" style="display: none;">
+    Admin Selected 
+</div>
+
+<script type="text/javascript">
+    function muestra_oculta(id){
+        if (document.getElementById){
+            var el = document.getElementById(id);
+            el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+        }
+    }
+    window.onload = function(){
+        muestra_oculta('contenido')
+    }
+    function admSelectCheck(nameSelect){
+        if(nameSelect){
+            admOptionValue= document.getElementById("admOption").value;
+            if (admOptionValue == nameSelect.value){
+                document.getElementById("admDivCheck").style.display = "block";
+
+            }
+            else
+            {
+                document.getElementById("admDivCheck").style.display = "none";
+            }
+        }
+        else 
+        {
+            document.getElementById("admDivCheck").style.display="none";
+        }
+    }
+</script>

@@ -22,6 +22,21 @@ class Database{
         $return = mysqli_real_escape_string($this->con,$var);
         return $return;
     }
+    public function altamaterias($tNombreMateria,$tDescripcionMateria,$fk_eCodCarrera){
+        $sql = "INSERT INTO `cat_materias` (tNombreMateria,tDescripcionMateria,fk_eCodCarrera) VALUES ('$tNombreMateria','$tDescripcionMateria','$fk_eCodCarrera') ";
+    $res = mysqli_query($this->con,$sql);
+    if ($res){
+        return true;
+    }
+        else{
+            return false;
+        }
+}
+public function listadomateria(){
+    $sql = "SELECT * FROM cat_materias";
+    $res = mysqli_query($this->con,$sql);
+    return $res;
+}
 
     public function altadocente($tGradoAcademico,$tNombreDocente,$tApellidoPaterno,$tApellidoMaterno,$tCorreoElectronico,$eTelefono){
             $sql = "INSERT INTO `cat_docentes` (tGradoAcademico,tNombreDocente,tApellidoPaterno,tApellidoMaterno,tCorreoElectronico,eTelefono) VALUES ('$tGradoAcademico','$tNombreDocente','$tApellidoPaterno','$tApellidoMaterno','$tCorreoElectronico','$eTelefono') ";
@@ -33,6 +48,7 @@ class Database{
                 return false;
             }
     }
+
     public function listadodocente(){
         $sql = "SELECT * FROM cat_docentes";
         $res = mysqli_query($this->con,$sql);
